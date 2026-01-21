@@ -171,3 +171,27 @@ Preview the commands without executing them:
 ```bash
 mcml-report --months-back 12 --dry-run
 ```
+
+## Keeping sim and slurm up to date
+
+Because `sim` and `slurm` evolve independently, you should periodically refresh the
+editable installs in your shared venv:
+
+```bash
+source .venv/bin/activate
+uv pip install -e "git+ssh://git@github.com/m-a-r-o-u/sim.git" --upgrade
+uv pip install -e "git+ssh://git@github.com/m-a-r-o-u/slurm.git" --upgrade
+```
+
+If you use local clones instead, just pull latest changes and reinstall:
+
+```bash
+cd ../sim && git pull
+cd ../slurm && git pull
+cd /path/to/mcml-reporting
+uv pip install -e ../sim --upgrade
+uv pip install -e ../slurm --upgrade
+```
+
+For convenience, you can rerun `./scripts/bootstrap.sh`, which recreates the venv
+and reinstalls the latest editable versions.
