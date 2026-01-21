@@ -40,6 +40,14 @@ cd mcml-reporting
 ./scripts/bootstrap.sh
 ```
 
+You can also run the quick setup in a single line:
+
+```bash
+git clone git@github.com:YOUR_ORG/mcml-reporting.git \
+  && cd mcml-reporting \
+  && ./scripts/bootstrap.sh
+```
+
 Manual setup:
 
 ```bash
