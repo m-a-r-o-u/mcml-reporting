@@ -14,8 +14,8 @@ uv venv
 # shellcheck disable=SC1091
 source .venv/bin/activate
 
-uv pip install --no-build-isolation "git+ssh://git@github.com/m-a-r-o-u/sim.git"
-uv pip install --no-build-isolation "git+ssh://git@github.com/m-a-r-o-u/slurm.git"
+uv pip install --no-build-isolation "git+https://github.com/m-a-r-o-u/sim.git"
+uv pip install --no-build-isolation "git+https://github.com/m-a-r-o-u/slurm.git"
 
 uv pip install -e .
 
