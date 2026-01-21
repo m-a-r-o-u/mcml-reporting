@@ -5,8 +5,8 @@ description = "Unified MCML reporting pipeline"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-  "sim-app @ git+ssh://git@github.com/m-a-r-o-u/sim.git",
-  "slurm-utils @ git+ssh://git@github.com/m-a-r-o-u/slurm.git",
+  "sim-app @ git+https://github.com/m-a-r-o-u/sim.git",
+  "slurm-utils @ git+https://github.com/m-a-r-o-u/slurm.git",
 ]
 
 [project.scripts]
