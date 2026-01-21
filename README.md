@@ -32,6 +32,16 @@ mcml-reporting/
 
 ## 1) Create the single uv environment
 
+Quick setup (recommended):
+
+```bash
+git clone git@github.com:YOUR_ORG/mcml-reporting.git
+cd mcml-reporting
+./scripts/bootstrap.sh
+```
+
+Manual setup:
+
 ```bash
 uv venv
 source .venv/bin/activate
